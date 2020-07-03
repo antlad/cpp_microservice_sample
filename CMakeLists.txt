@@ -41,7 +41,7 @@ set(service_sample_SRCS
         src/rest.hpp
         )
 add_executable(service_sample ${service_sample_SRCS} ${service_sample_core_SRC})
-target_link_libraries(service_sample ${CONAN_LIBS})
+target_link_libraries(service_sample ${CONAN_LIBS} -static)
 
 
 if (ENABLE_TESTS)
