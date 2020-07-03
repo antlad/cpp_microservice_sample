@@ -1,0 +1,17 @@
+[requires]
+gtest/1.8.1@bincrafters/stable
+cxxopts/v2.1.2@inexorgame/stable
+spdlog/1.5.0
+jsonformoderncpp/3.7.2@vthiery/stable
+restinio/0.6.6@stiffstream/stable
+boost/1.71.0@conan/stable
+fmt/6.2.0
+#openssl/1.1.1d@conan/stable
+
+[generators]
+cmake
+
+[options]
+restinio:fmt_header_only=false
+restinio:use_openssl=false
+restinio:boost_libs=static
